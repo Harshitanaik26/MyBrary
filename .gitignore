@@ -1,4 +1,4 @@
 .env
 node_modules
-public/uploads
+uploads
 pictures_books
