@@ -1,6 +1,8 @@
-FilePond.registerPlugin(FilePondPluginImagePreview);
-FilePond.registerPlugin(FilePondPluginImageResize);
-FilePond.registerPlugin(FilePondPluginFileEncode);
+FilePond.registerPlugin(
+    FilePondPluginImagePreview,
+    FilePondPluginImageResize,
+    FilePondPluginFileEncoded,
+)
 
 FilePond.setOptions({
     stylePanelAspectRatio: 150/100,
