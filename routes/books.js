@@ -2,7 +2,7 @@ const express = require('express')
 const router = express.Router()
 const Book = require('../models/books')
 const Author = require('../models/author')
-const imageMimeTypes = ['image/jpeg' , 'image/png' , 'image/gifs']
+const imageMimeTypes = ['image/jpeg' , 'image/png' , 'image/gifs','image/jpg']
 
 
 //All Books route
