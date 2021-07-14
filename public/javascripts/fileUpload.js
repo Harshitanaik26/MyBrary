@@ -1,8 +1,8 @@
-FilePond.registerPlugin(
-    FilePondPluginImagePreview,
-    FilePondPluginImageResize,
-    FilePondPluginFileEncoded,
-)
+/*const { FilePond } = require("filepond")*/
+
+FilePond.registerPlugin(FilePondPluginImagePreview)
+FilePond.registerPlugin(FilePondPluginImageResize)
+FilePond.registerPlugin(FilePondPluginFileEncoded)
 
 FilePond.setOptions({
     stylePanelAspectRatio: 150/100,
