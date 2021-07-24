@@ -1,0 +1,32 @@
+.btn{
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: 3px 1rem;
+    font-size: 16px;
+    margin:3px 4px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor:pointer;
+    text-decoration: none;
+    text-align: center;
+}
+.btn-row{
+    display: flex;
+    align-items: flex-start;
+}
+.btn-primary{
+    color: hsl(200,100%,8%);
+    background-color: hsl(200,100%,70%);
+}
+.btn-danger{
+    color: rgb(229, 236, 240);
+    background-color: rgb(228, 21, 21);
+}
+.btn-primary:hover{
+    color: hsl(200,100%,8%);
+    background-color: rgb(170, 211, 231);
+}
+.btn-danger:hover{
+    color: rgb(15, 15, 15);
+    background-color: rgb(247, 138, 138);
+}
+

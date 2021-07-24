@@ -1,0 +1,24 @@
+@import 'shared/variables.css';
+@import 'shared/header.css';
+@import 'shared/buttons.css';
+
+:root{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color:var(--text-color-light);
+}
+body{
+    background: linear-gradient(to right,var(--background-color-dark),var(--background-color-light));
+}
+.container{
+    max-width: 1200px;
+    margin:auto;
+    margin-bottom: 3rem;
+}
+.inner-container{
+    margin: 0 2rem;
+}
+.page-header{
+    font-size: 2rem;
+    font-weight: 500;
+}

@@ -1,0 +1,5 @@
+:root{
+    --background-color-dark: hsl(200,100%,8%);
+    --background-color-light: hsl(200,100%,16%);
+    --text-color-light:hsl(200,100%,88%);
+}
