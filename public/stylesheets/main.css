@@ -2,6 +2,8 @@
 @import 'shared/header.css';
 @import 'shared/buttons.css';
 @import 'shared/form.css';
+@import 'shared/authors.css';
+@import 'shared/book.css';
 
 :root{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -22,4 +24,7 @@ body{
 .page-header{
     font-size: 2rem;
     font-weight: 500;
+}
+.errormessage{
+    color:rgb(255,0,0);
 }

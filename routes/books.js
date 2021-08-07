@@ -42,15 +42,12 @@ router.post('/',async(req,res) => {
     pageCount:req.body.pageCount,
     description:req.body.description
   })
-
   saveCover(book,req.body.cover)
-
-
   try {
      const newBook = await book.save()
      res.redirect(`books/${newBook.id}`)
   } catch{
-    renderNewPage(res,book,true)
+    renderNewPage(res,book,hasError=true)
   }
 })
 
@@ -89,10 +86,9 @@ router.put('/:id',async(req,res) => {
     }
     await book.save()
     res.redirect(`/books/${book.id}`)
-  } catch(err){
-    console.log(err)
+  } catch{
     if(book){
-      renderNewPage(res,book,true)
+      renderEditPage(res,book,true)
     }else{
       res.redirect('/')
     }
@@ -134,15 +130,16 @@ async function renderFormPage(res,book,form,hasError = false){
       book :book
     }
     if(hasError){
-      if(form === '/edit'){
+      if(form === 'edit'){
         params.errorMessage = "Error Updating Book"
-      }else{
+      }
+      else{
       params.errorMessage = "Error Creating Book"
       }
     }
     res.render(`books/${form}`,params)
-  } catch {
-    res.redirect('books')
+  } catch{
+      res.redirect('books')
    }
 }
 
